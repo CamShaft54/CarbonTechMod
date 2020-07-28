@@ -19,5 +19,6 @@ public class RegistryHandler {
 
     //Items
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<Item> CARBON = ITEMS.register("carbon", ItemBase::new);
 
 }
