@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "carbontech:blocks/ruby_block"
+  }
+}

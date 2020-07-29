@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "carbontech:block/ruby_block" }
+  }
+}

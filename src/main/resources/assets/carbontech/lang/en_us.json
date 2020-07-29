@@ -1,3 +1,6 @@
 {
-  "item.carbontech.ruby": "Ruby"
+  "item.carbontech.ruby": "Ruby",
+  "item.carbontech.carbon": "Carbon",
+  "block.carbontech.ruby_block": "Block of Ruby",
+  "itemGroup.carbonTab": "CarbonTech"
 }
