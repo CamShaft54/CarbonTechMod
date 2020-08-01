@@ -3,6 +3,7 @@ package com.camshaft54.carbontech.util;
 
 import com.camshaft54.carbontech.CarbonTech;
 import com.camshaft54.carbontech.blocks.BlockItemBase;
+import com.camshaft54.carbontech.blocks.CarbonOre;
 import com.camshaft54.carbontech.blocks.RubyBlock;
 import com.camshaft54.carbontech.items.ItemBase;
 import com.camshaft54.carbontech.tools.ModItemTier;
@@ -30,9 +31,11 @@ public class RegistryHandler {
 
     // Blocks
     public static final RegistryObject<Block> RUBY_BLOCK = BLOCKS.register("ruby_block", RubyBlock::new);
+    public static final RegistryObject<Block> CARBON_ORE = BLOCKS.register("carbon_ore", CarbonOre::new);
 
     // Block Items
     public static final RegistryObject<Item> RUBY_BLOCK_ITEM = ITEMS.register("ruby_block", () -> new BlockItemBase(RUBY_BLOCK.get()));
+    public static final RegistryObject<Item> CARBON_ORE_ITEM = ITEMS.register("carbon_ore", () -> new BlockItemBase(CARBON_ORE.get()));
 
     // Tools
     public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
