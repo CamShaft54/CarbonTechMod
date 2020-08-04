@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "carbontech:ruby_block"
+      "item": "carbontech:garnet_block"
     }
   ],
   "result":
