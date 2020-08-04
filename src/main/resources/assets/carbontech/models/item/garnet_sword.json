@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "carbontech:items/ruby_sword"
+    "layer0": "carbontech:items/garnet_sword"
   }
 }

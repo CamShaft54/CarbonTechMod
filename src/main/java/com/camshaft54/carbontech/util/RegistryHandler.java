@@ -26,7 +26,7 @@ public class RegistryHandler {
     }
 
     // Items
-    public static final RegistryObject<Item> RUBY = ITEMS.register("ruby", ItemBase::new);
+    public static final RegistryObject<Item> GARNET = ITEMS.register("garnet", ItemBase::new);
     public static final RegistryObject<Item> CARBON = ITEMS.register("carbon", ItemBase::new);
 
     // Blocks
@@ -38,6 +38,6 @@ public class RegistryHandler {
     public static final RegistryObject<Item> CARBON_ORE_ITEM = ITEMS.register("carbon_ore", () -> new BlockItemBase(CARBON_ORE.get()));
 
     // Tools
-    public static final RegistryObject<SwordItem> RUBY_SWORD = ITEMS.register("ruby_sword", () ->
-            new SwordItem(ModItemTier.RUBY, 2, -2.4F, new Item.Properties().group(CarbonTech.TAB)));
+    public static final RegistryObject<SwordItem> GARNET_SWORD = ITEMS.register("garnet_sword", () ->
+            new SwordItem(ModItemTier.GARNET, 2, -2.4F, new Item.Properties().group(CarbonTech.TAB)));
 }

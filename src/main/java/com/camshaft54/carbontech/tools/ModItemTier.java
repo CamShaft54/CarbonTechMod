@@ -8,8 +8,8 @@ import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 
-    RUBY(3, 1972, 9.0f, 3.0F, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.RUBY.get());
+    GARNET(3, 1972, 9.0f, 3.0F, 12, () -> {
+        return Ingredient.fromItems(RegistryHandler.GARNET.get());
     });
 
     private final int harvestLevel;
@@ -53,6 +53,7 @@ public enum ModItemTier implements IItemTier {
         return enchantablility;
     }
 
+    @SuppressWarnings("NullableProblems")
     @Override
     public Ingredient getRepairMaterial() {
         return repairMaterial.get();
