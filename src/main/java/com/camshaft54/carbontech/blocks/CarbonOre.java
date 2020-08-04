@@ -10,6 +10,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
 
+import java.util.Random;
+
 public class CarbonOre extends OreBlock {
     public CarbonOre() {
         super(Block.Properties.create(Material.IRON)
@@ -20,8 +22,14 @@ public class CarbonOre extends OreBlock {
                 .setRequiresTool());
     }
 
+    @SuppressWarnings("NullableProblems")
     @Override
     public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return 1;
+        if (silktouch == 1)
+            return 0;
+        else {
+            Random rand = new Random();
+            return rand.nextInt(4) + 2;
+        }
     }
 }
