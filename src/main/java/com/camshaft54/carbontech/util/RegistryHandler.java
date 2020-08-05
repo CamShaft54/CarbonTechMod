@@ -4,6 +4,7 @@ package com.camshaft54.carbontech.util;
 import com.camshaft54.carbontech.CarbonTech;
 import com.camshaft54.carbontech.blocks.BlockItemBase;
 import com.camshaft54.carbontech.blocks.CarbonOre;
+import com.camshaft54.carbontech.blocks.Crusher;
 import com.camshaft54.carbontech.blocks.GarnetBlock;
 import com.camshaft54.carbontech.items.ItemBase;
 import com.camshaft54.carbontech.tools.ModItemTier;
@@ -32,10 +33,12 @@ public class RegistryHandler {
     // Blocks
     public static final RegistryObject<Block> GARNET_BLOCK = BLOCKS.register("garnet_block", GarnetBlock::new);
     public static final RegistryObject<Block> CARBON_ORE = BLOCKS.register("carbon_ore", CarbonOre::new);
+    public static final RegistryObject<Block> CRUSHER = BLOCKS.register("crusher", Crusher::new);
 
     // Block Items
     public static final RegistryObject<Item> GARNET_BLOCK_ITEM = ITEMS.register("garnet_block", () -> new BlockItemBase(GARNET_BLOCK.get()));
     public static final RegistryObject<Item> CARBON_ORE_ITEM = ITEMS.register("carbon_ore", () -> new BlockItemBase(CARBON_ORE.get()));
+    public static final RegistryObject<Item> CRUSHER_ITEM = ITEMS.register("crusher", () -> new BlockItemBase(CRUSHER.get()));
 
     // Tools
     public static final RegistryObject<SwordItem> GARNET_SWORD = ITEMS.register("garnet_sword", () ->
