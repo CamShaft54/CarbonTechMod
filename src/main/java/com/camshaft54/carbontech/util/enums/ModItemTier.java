@@ -1,6 +1,6 @@
-package com.camshaft54.carbontech.tools;
+package com.camshaft54.carbontech.util.enums;
 
-import com.camshaft54.carbontech.util.RegistryHandler;
+import com.camshaft54.carbontech.init.ModItems;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 
@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public enum ModItemTier implements IItemTier {
 
     GARNET(3, 1972, 9.0f, 3.0F, 12, () -> {
-        return Ingredient.fromItems(RegistryHandler.GARNET.get());
+        return Ingredient.fromItems(ModItems.GARNET.get());
     });
 
     private final int harvestLevel;
